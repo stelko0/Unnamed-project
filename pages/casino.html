@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script defer src="/js/brands.js"></script>
+    <script defer src="/js/solid.js"></script>
+    <script defer src="/js/fontawesome.js"></script>
+    <title>stelko0u Website</title>
+  </head>
+  <body class="animate">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">stelko0u</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="school.html">School</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="casino.html">Casino</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link left"
+                href="signin.html"
+                style="margin-right: 10px"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link left" href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container moveDown">
+        <div class="row text-center">
+          <div class="col-sm-4 m-0 m-auto bg-light boxCasino">
+            <div class="numberBox">
+              <span id="number1"></span>
+              <span id="number2"></span>
+              <span id="number3"></span>
+            </div>
+            <div class="freeBox">
+              <span id="winOrLose"></span>
+            </div>
+            <input type="number" id="betMoney" placeholder="Bet" />
+            <div class="freeBox">
+              <span id="cash"></span>
+            </div>
+            <button class="bet" onclick="casino()">Spin</button>
+            <div class="freeBox" style="height: 30px auto">
+              <span id="error"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container flex j">
+        <div class="row">
+          <div class="col-sm-4 bg-light">
+            <div class="numberBox">
+          <span id="number1"></span>
+          <span id="number2"></span>
+          <span id="number3"></span>
+        </div>
+        <div class="freeBox">
+          <span id="winOrLose"></span>
+        </div>
+        <input type="number" id="betMoney" placeholder="Bet" />
+        <div class="freeBox">
+          <span id="cash"></span>
+        </div>
+        <div class="freeBox">
+          <span id="counts"></span>
+        </div>
+
+        <button class="bet" onclick="casino()">Spin</button>
+        <div class="freeBox" style="height: 30px auto">
+          <span id="error"></span>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My Scripts -->
+    <script src="../scripts/casino.js"></script>
+  </body>
+</html>
