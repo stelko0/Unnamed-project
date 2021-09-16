@@ -4,6 +4,10 @@ let win = 0;
 let lose = 0;
 function casino(betMoney) {
   let bet = Number(document.getElementById('betMoney').value);
+  if (bet > cash) {
+    document.getElementById('error').innerHTML = `You don't have enough money!`;
+    return;
+  }
   line = Math.ceil(Math.random() * 1000);
   if (line > 100 && line < 120) {
     console.log(line);
