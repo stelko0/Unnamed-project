@@ -4,34 +4,37 @@ let win = 0;
 let lose = 0;
 function casino(betMoney) {
   let bet = Number(document.getElementById('betMoney').value);
-  if (bet > cash) {
-    document.getElementById('error').innerHTML = `You don't have enough money!`;
-    return;
-  }
   line = Math.ceil(Math.random() * 1000);
   if (line > 100 && line < 120) {
     console.log(line);
-    while (line != 444|| line != 555 || line != 666 || line != 888) {
+    while (line != 444 || line != 555 || line != 666 || line != 888) {
       line = Math.ceil(Math.random() * 1000);
-      if(line == 444 || line == 555 || line != 666 || line != 888){
+      if (line == 444 || line == 555 || line != 666 || line != 888) {
         break;
       }
     }
   }
-  if(line > 130 && line < 135){
+  if (line > 130 && line < 135) {
     while (line != 777) {
       line = Math.ceil(Math.random() * 1000);
     }
   }
+
   if (bet <= 0) {
-    document.getElementById('error').innerHTML = `Insert your bet!`;
+    document.getElementById('error').innerHTML = `Insert your bet! Min bet: 1$`;
     return;
   } else {
     document.getElementById('error').innerHTML = ``;
   }
+  if (bet < 1) {
+    document.getElementById('error').innerHTML = `Insert your bet! Min bet: 1$`;
+    return;
+  }
 
   if (cash <= 0) {
-    document.getElementById('error').innerHTML = `You don't have enough money!`;
+    document.getElementById(
+      'error'
+    ).innerHTML = `You don't have enough money! W${win} L${lose}`;
     return;
   }
 
